@@ -5,7 +5,7 @@ NER expands to **N**amed **E**ntity **R**ecognition. The NER model takes unstruc
 ## ❔ What does this App do ?
 Setup **Einstein NER** in your Org with a single click!
 
-Visit the blog - [INSERT LINK] to learn more.
+Visit the blog - https://shrutisridharan.wordpress.com/2020/11/01/einstein-named-entity-recognition-beta/ to learn more.
 
 ## ☁️ Deployment
 Use the below button to deploy this to your SF Org in a single click!
@@ -16,7 +16,7 @@ Use the below button to deploy this to your SF Org in a single click!
 </a>
 
 ## 🛠️ Post-Deployment Steps
-Read blog to learn more - [INSERT LINK]
+Read blog to learn more - https://shrutisridharan.wordpress.com/2020/11/01/einstein-named-entity-recognition-beta/.
 
 ## 📞 Support
 For any support or help, please shoot me an email at **shruti.sridharan22@gmail.com**.
