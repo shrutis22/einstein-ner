@@ -1,0 +1,60 @@
+<template>
+    <!--Progress Indicator-->
+    <lightning-spinner
+        if:true={componentState.isBusy}
+        variant="brand"
+        size="large"
+    ></lightning-spinner>
+
+    <lightning-card icon-name="standard:story" title="Einstein Detect Entities">
+        <!--Error-->
+        <div
+            if:true={componentState.hasError}
+            class="slds-m-around_small slds-box slds-box_medium slds-theme_error slds-theme_alert-texture"
+        >
+            {componentState.message}
+        </div>
+
+        <!--Inputs-->
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12" padding="horizontal-small">
+                <lightning-textarea
+                    label="Text to classify"
+                    maxlength="3000"
+                    message-when-too-long="A maximum of only 3000 characters are allowed."
+                    placeholder="Start typing here..."
+                    onchange={handleTextareaChange}
+                    required
+                    value={textToClassify}
+                ></lightning-textarea>
+            </lightning-layout-item>
+            <lightning-layout-item
+                if:true={isTextValid}
+                size="12"
+                padding="horizontal-small"
+            >
+                <div class="slds-p-around_small slds-text-align_center">
+                    <lightning-button
+                        variant="brand"
+                        label="Detect Entities"
+                        onclick={handleDetectEntities}
+                    ></lightning-button>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <!--Outputs-->
+        <div if:true={isDetected} class="slds-p-around_small">
+            <lightning-tabset>
+                <lightning-tab label="Detected Entities">
+                    <div lwc:dom="manual" class="beautified"></div>
+                </lightning-tab>
+                <lightning-tab label="Raw Response">
+                    <pre
+                        class="prettified"
+                    ><code>{prettifiedRawResults}</code></pre>
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+    </lightning-card>
+</template>

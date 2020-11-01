@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Einstein NER</fullName>
+    <types>
+        <members>EAPI_ActionResponse</members>
+        <members>EAPI_Core</members>
+        <members>EAPI_HttpFormBuilder</members>
+        <members>EAPI_JWT</members>
+        <members>EAPI_JWTBearerFlow</members>
+        <members>EinsteinDetectEntitiesCtrl</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Einstein_AI</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Einstein_API_Settings__c.Einstein_NER_Endpoint__c</members>
+        <members>Einstein_API_Settings__c.Registered_Email__c</members>
+        <members>Einstein_API_Settings__c.Token_Endpoint__c</members>
+        <members>Einstein_API_Settings__c.Token_Expiration_Seconds__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Einstein_API_Settings__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Detect_Entities</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Einstein_AI_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>einsteinDetectEntities</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Einstein_AI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>49.0</version>
+</Package>

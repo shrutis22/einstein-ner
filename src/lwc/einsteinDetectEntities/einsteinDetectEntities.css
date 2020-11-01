@@ -1,0 +1,23 @@
+.beautified {
+    line-height: 2.5rem;
+}
+
+.token {
+    border: 1px dotted #607d8b;
+    padding: 3px;
+    position: relative;
+    background-color: #ffeb3b;
+}
+
+.token::before {
+    content: attr(title);
+    position: absolute;
+    top: -28px;
+    font-size: 9px;
+    left: 0px;
+    font-weight: bold;
+}
+
+.prettified {
+    max-height: 400px;
+}
