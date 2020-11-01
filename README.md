@@ -1,2 +1,3 @@
-# einstein-ner
-Einstein Named Entity Recognition implementation in Apex
+# Einstein Named Entity Recognition
+
+Read blog to learn more - 
